@@ -1,32 +1,38 @@
-# Python
+# Python cache
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
+# Virtual environments
 .env
-venv/
 .venv/
+venv/
 
 # Jupyter
 .ipynb_checkpoints/
 
-# Data
+# Competition data
 data/*.csv
+data/raw/*.csv
+data/processed/*.csv
+
+# Generated submissions
 submissions/*.csv
+
+# Generated predictions
 predictions/**/*.csv
+
+# CatBoost logs
 catboost_info/
 notebooks/catboost_info/
-__pycache__/
-src/__pycache__/
-*.pyc
 
-# Models
-models/*.pkl
-models/*.joblib
+# Model files
+models/
+*.pkl
+*.joblib
+*.cbm
 
-# Submissions
-submissions/*.csv
-
-# System
+# System files
 .DS_Store
 Thumbs.db
